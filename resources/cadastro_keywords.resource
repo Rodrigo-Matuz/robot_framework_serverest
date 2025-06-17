@@ -8,13 +8,21 @@ Acessar tela de cadastro
     Wait For Elements State    css=button[data-testid="cadastrar"]    visible    timeout=10s
 
 Preencher formulário de cadastro com dados válidos
-    ${email}=    Generate Random Email
-    ${password}=    Set Variable    Test1234!
+    [Arguments]    ${email}=${EMPTY}    ${password}=${EMPTY}    ${set_admin}=${FALSE}
+    IF    '${email}' == ''
+        ${email}=    Generate Random Email
+    END
+    IF    '${password}' == ''
+        ${password}=    Set Variable    Test1234!
+    END
     Fill Text    input[name="nome"]    Usuário Teste
     Fill Text    input[name="email"]    ${email}
     Fill Text    input[name="password"]    ${password}
+    IF    ${set_admin}
+        Click    css=#administrador
+    END
     Click    css=button[data-testid="cadastrar"]
-    [RETURN]    ${email}    ${password}
+    RETURN    ${email}    ${password}
 
 Tentar cadastrar com um email existente
     [Arguments]    ${email}
