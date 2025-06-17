@@ -4,7 +4,7 @@ Este repositório faz parte de um programa de bolsas e contém testes automatiza
 
 ## Sobre o Projeto
 
-Neste projeto, implementamos testes automatizados Web para a aplicação ServeRest (https://compassuolfront.serverest.dev/). Cada membro da Squad é responsável por implementar pelo menos dois casos de teste, seguindo boas práticas de código, Git e utilizando Gitflow com aprovação de pull requests.
+Neste projeto, implementamos testes automatizados Web para a aplicação [ServeRest](https://compassuolfront.serverest.dev/). Cada membro da Squad é responsável por implementar pelo menos dois casos de teste, seguindo boas práticas de código, Git e utilizando Gitflow com aprovação de pull requests.
 
 ## Como contribuir
 
