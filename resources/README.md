@@ -1,1 +1,0 @@
-Use esta pasta para recursos como variaveis e keywords
