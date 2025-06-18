@@ -4,6 +4,14 @@ Resource        ../variables/env_variables.resource
 Resource        ./common_keywords.resource
 
 *** Keywords ***
+Criar Produto com sucesso como administrador
+    Click    css=[data-testid="cadastrarProdutos"]
+    Fill Text    input[name="nome"]    ${PRODUCT_NAME}
+    Fill Text    input[name="price"]    ${PRODUCT_PRICE}
+    Fill Text    css=[data-testid="descricao"]    ${PRODUCT_DESCRIPTION}
+    Fill Text    input[name="quantity"]    ${PRODUCT_QUANTITY}
+    Click    css=[data-testid="cadastarProdutos"]
+
 Pesquisar produto
     [Arguments]    ${search_term}
     Wait For Elements State    css=[data-testid="pesquisar"]    visible    timeout=3s
