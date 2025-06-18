@@ -43,7 +43,7 @@
 
 ## Informações do Code Review
 
-### Revisores (Squad 6: Cavalheiros do QA)
+### Revisores (Squad 6: Cavalheiros da Qualidade)
 - [Rodrigo dos Santos Lima](https://github.com/Rodrigo-Matuz)
 - [Wesley Cassio](https://github.com/Casx1)
 - [Lucas Garcia Brito](https://github.com/Lucas-gb)
